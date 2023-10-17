@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@480;460&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+/* display: flex;
+justify-content: center;
+align-items: center;
+background: #ea8c8c; */
+/* display: none; */
+
+}
+.hello{
+    height: 100px;
+    width: 100px;
+background-color: #000000;
+margin-bottom: 20px;
+}
+.container5{
+    height: 568px;
+    width:740px;
+    display: none;
+    margin-top:28px;
+    border-radius:23px;
+    background: #fff;
+}
+.box{
+    display: flex;                                                                                                      */
+    align-items:center;
+    margin-top: 13px;
+    margin-left: 21px;
+}
+.heading{
+    display: flex;
+    gap:1px;
+    margin-top: 12px;
+    margin-left: 66px;
+}
+.heading i{
+    font-size: 23px;
+    margin-top: 5px;
+    color:#F97316;
+}
+.heading h1{
+    font-size: 25px;
+    color: #F97316;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+}
+.icon{
+  margin-left: 400px;
+    font-size: 28px;
+    margin-top: 18px;
+    color:#DC2626;
+    font-weight: 100;
+}
+.content1 img{
+    height: 57px;
+    width: 51px;
+}
+.box1{
+    display: flex;
+    margin-top: 34px;
+    gap: 251px;
+margin-left:32px;
+position: relative;
+}
+.content1{
+    display: flex;
+    gap:18px;
+}
+.quan{
+    display: flex;
+    /* margin-left: 3px; */
+}
+.quan-cart{
+    margin-left: 3px;
+}
+.deletion{
+    display: flex;
+    gap: 18px;
+}
+.deletion p{
+    margin-top: 9px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+.info h4{
+    margin-top: -6px;
+    font-family: 'Montserrat', sans-serif;
+}
+.info p{
+    margin-top: 8px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+.quan{
+    gap: 6px;
+    margin-top: 4px;
+    font-size: 18px;
+    display: flex;
+}
+p.quan1{
+    color:red;
+    font-size: 29px;
+    cursor: pointer;
+    margin-top: -2px;
+  }
+  p.quan2{
+    font-size:18px;
+    margin-top: 5px;
+    color: #000000;
+    font-weight: 100;
+  }
+  p.quan3{
+    color:green;
+    font-size: 29px;
+    cursor: pointer;
+    margin-top: -1px;
+  }
+  .box1::after{
+    content: '';
+    width: 652px;
+    height: 1px;
+    bottom: 0px;
+    top: 81px;
+    left: 0;
+    background: #F97316;
+    position: absolute;
+}
+  .span1{
+    margin-left: 4px;
+  }
+
+.dust{
+   height: 43px;
+    width: 51px;
+    border-radius: 27px;
+    background: #d84141;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.input1{
+    width: 34px;
+    height: 30px;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Palette</title>
+    <link rel="stylesheet" href="CartView.css">
+    <script src="https://kit.fontawesome.com/7fe908db43.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <button onclick="hello()"> hello</button>
+      <div class="container5">
+        <div class="box">
+            <div class="heading">
+                <i class="fa-solid fa-cart-shopping"></i>
+               <h1> Your Cart</h1>
+            </div>
+               <div class="icon">
+                <i class="fa-regular fa-circle-xmark "></i>
+              
+            </div>
+        </div>
+
+        <!-- <div class="box1">
+            <div class="content1">
+              <img src="pepperoni-pizza.webp" alt="">
+               <div class="info">
+                <h4>Pepperoni Feast</h4>
+                <p>Price: $12.9 | Size: Large</p>
+                <div class="quan">
+                    <p class="quan1 minus1">-</p>
+                    <p class="quan2">Qty:<span class="span1" >0</span></p>
+                    <p class="quan3 cart1">+</p>
+                </div>
+               </div>
+        </div>
+        <div class="content2">
+         <div class="deletion">
+           <div class="dust">
+            <i class="fa-solid fa-trash "></i>
+           </div>
+            <p>Total: $ <span class="cart">12.9</span> </p>
+         </div>
+        </div>
+    </div> -->
+    <!-- <hr> -->
+
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+      <!-- ------------------------------------Javascript for add to the cart------------------------------------   -->
+            <Script>
+            const hello = ()=>{
+                var cont = document.querySelector('.container5');
+                var div = document.createElement('div')
+         div.classList.add('box1');
+              cont.appendChild(div);
+              var div2 = document.createElement('div');
+              div2.classList.add('content1');
+              div.appendChild(div2)
+              var img = document.createElement('img')
+              img.setAttribute("src","pepperoni-pizza.webp")
+              div2.appendChild(img);
+              var div3 = document.createElement('div')
+            div3.classList.add('info');
+            div2.appendChild(div3); 
+            var h4 = document.createElement('h4');
+            div3.appendChild(h4);
+            h4.innerHTML= "Pepperoni Feast"
+            var p = document.createElement('p');
+            div3.appendChild(p);
+            p.innerHTML= "Price: $12.9 | Size: Large"
+                var div4= document.createElement('div')
+            div4.classList.add('quan');
+            div3.appendChild(div4); 
+            var p2 = document.createElement('p');
+            div4.appendChild(p2);
+            p2.classList.add('quan1','minus1');
+            p2.innerHTML="-";
+
+            var p3 = document.createElement('p');
+            div4.appendChild(p3);
+            p3.classList.add('quan2');
+            p3.innerHTML="Qty:";
+   var span = document.createElement('span');
+            p3.appendChild(span);
+            span.classList.add('span1');
+span.innerHTML="0";
+var p4= document.createElement('p');
+            div4.appendChild(p4);
+            p4.classList.add('quan3' ,'cart1');
+            p4.innerHTML="+";
+
+            var div5 = document.createElement('div')
+               div.appendChild(div5);
+         div5.classList.add('content2');
+
+         var div6 = document.createElement('div')
+               div5.appendChild(div6);
+         div6.classList.add('deletion');
+
+         var div7= document.createElement('div')
+               div6.appendChild(div7);
+         div7.classList.add('dust');
+
+         var icon=document.createElement('i');
+         div7.appendChild(icon);
+         icon.classList.add('fa-solid' , 'fa-trash');
+         var p5= document.createElement('p');
+          div6.appendChild(p5);
+     p5.innerHTML="Total: $";
+
+ var span1= document.createElement('span');
+            p5.appendChild(span1);
+            span.classList.add('cart');
+span1.innerHTML="12.9";
+
+
+            }
+
+            let dust = document.querySelector(".dust");
+   let box1 = document.querySelector(".box1");
+   let icon = document.querySelector(".icon");
+   let container9 = document.querySelector(".container5");
+   
+
+   dust.addEventListener("click" , function(e){
+     if(e.target.tagName === "I"){
+      box1.remove();
+     
+    }
+ });
+ icon.addEventListener("click" , function(e){
+     if(e.target.tagName === "I"){
+      container9.remove();
+     
+    }
+ });
+
+
+
+            cart=document.querySelector(".cart");
+              
+              const cart1 =document.querySelector('.cart1');
+              span1=document.querySelector(".span1");
+              minus1= document.querySelector(".minus1");
+              let a=12.9;
+              let j=0;
+              cart1.addEventListener("click",()=>{
+                
+                 if(j<10){
+                    j++;
+             span1.innerText=j; 
+             a=Math.floor(a+12.9);
+             cart.innerText=a;
+                 }
+        
+              });
+              minus1.addEventListener("click",()=>{
+                  if(j>0){
+                      j--;
+                      span1.innerText=j;
+                      a=a-12.9;
+             cart.innerText=a;
+                  }
+              });
+
+
+
+ 
+ function saveData(){
+    localStorage.setItem("data",listContainer.innerHTML)
+ 
+
+}
+function showTask(){
+    listContainer.innerHTML = localStorage.getItem("data");
+}
+showTask();
+
+
+             </Script>
+</body>
+</html>

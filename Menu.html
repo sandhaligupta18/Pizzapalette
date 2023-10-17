@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Palette</title>
+  <link rel="stylesheet" href="Menu.css">
+  <link rel="stylesheet" href="animation2.css">
+  <link rel="stylesheet" href="CartView.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/7fe908db43.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- ------------------------------------Animation------------------------------------   -->
+  <!-- ------------------------------------NavBar------------------------------------   -->
+  <div class="container1">
+    <div class="sand">
+      <div class="container">
+        <div class="navbar">
+          <nav>
+            <img src="logo.png" alt="">
+            <h1>Pizza Palette</h1>
+            <div class="openMenu"> <i class='bx bx-menu'></i></div>
+            <div class="nav2">
+              <div class="nav1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a class="Order" href="MyOrdrs.html">My Orders</a></li>
+                <li> <a href="about.html">About</a></li>
+              </div>
+              <div class="btn">
+                <button class="button1">
+                  <i class="fa-solid fa-cart-shopping"></i>Your Cart<p class="cart"></p>
+
+
+                </button>
+                <button class="button2"><i class="fa-solid fa-arrow-right-to-bracket"></i>Login/Register</button>
+              </div>
+              <div class="closeMenu"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Loading animation -->
+    <div class="loader">
+
+      <div class="circle"></div>
+      <div class="circle circle2"></div>
+      <div class="circle circle3"></div>
+
+      <div class="circle circle4"> </div>
+      <div class="circle5">
+        <i class="fa-solid fa-pizza-slice"></i>
+        <p>Loading</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ------------------------------------NavBar------------------------------------   -->
+  <div class="sand">
+    <div class="container">
+      <div class="navbar">
+        <nav>
+          <img src="logo.png" alt="">
+          <h1>Pizza Palette</h1>
+          <div class="openMenu"> <i class='bx bx-menu'></i></div>
+          <div class="nav2">
+            <div class="nav1">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Menu.html">Menu</a></li>
+              <li><a class="Order" href="MyOrdrs.html">My Orders</a></li>
+              <li> <a href="about.html">About</a></li>
+            </div>
+            <div class="btn">
+              <button class="button1">
+               <i class="fa-solid fa-cart-shopping"></i> <a href="CartView.html">Your Cart</a> <p class="cart"></p>
+
+              </button>
+              <button class="button2"><i class="fa-solid fa-arrow-right-to-bracket"></i>Login/Register</button>
+            </div>
+            <div class="closeMenu"><i class="fa-solid fa-xmark"></i></div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- ------------------------------------Menu ------------------------------------   -->
+
+    <section id="Menu" class="main">
+      <div class="heading">
+        <h1>Pizza Menu</h1>
+      </div>
+
+      <div class="menu-3" >
+        <!-- Pizza 1 -->
+        <div class="menu1" id="item1">
+          <img src="pepperoni-pizza.webp" alt="">
+          <hr>
+          <div class="Home-price">
+            <h3 class="min" >jkhgfyt</h3>
+            <h2>$<span>12.99</span></h2>
+          </div>
+          <p>Classic Pepperoni pizza with Extra Cheese</p>
+          <h4 class="menu-para">Size:<span>Small</span></h4>
+
+          <div class="Home-price1">
+            <button class="btn1" onclick="Sandhali(item1)">Add to Cart</button>
+            <div class="quan">
+              <p class="quan1 minus1">-</p>
+              <p class="quan2">Qty:<span class="span1"></span></p>
+              <p class="quan3 cart1">+</p>
+            </div>
+
+          </div>
+        </div>
+        <!-- Pizza 2 -->
+        <div class="menu2" id="item2">
+          <img src="supreme-pizza.webp" alt="">
+          <hr>
+          <div class="Home-price">
+            <h3 class="min">Pepperoni Feast</h3>
+            <h2>$<span>15.99</span></h2>
+          </div>
+          <p>Classic Pepperoni pizza with Extra Cheese</p>
+          <h4 class="menu-para">Size:<span>Large</span></h4>
+
+          <div class="Home-price1">
+            <button class="btn1"  onclick="Sandhali(item2)">Add to Cart</button>
+            <div class="quan">
+              <p class="quan1 minus2">-</p>
+              <p class="quan2">Qty: <span class="span2"></span> </p>
+              <p class="quan3 cart2">+</p>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- Pizza 3 -->
+        <div class="menu3" id="item3">
+          <img src="veggie-pizza.webp" alt="">
+          <hr>
+          <div class="Home-price">
+            <h3 class="min">Margherita Delight</h3>
+            <h2>$<span>10.99</span></h2>
+          </div>
+          <p>Fresh tomatoes, mozzarella, and basil leaves.</p>
+          <h4 class="menu-para">Size:<span>Small</span></h4>
+
+          <div class="Home-price1">
+            <button class="btn1" onclick="Sandhali(item3)">Add to Cart</button>
+            <div class="quan">
+              <p class="quan1 minus3">-</p>
+              <p class="quan2">Qty:<span class="span3"></span></p>
+              <p class="quan3 cart3">+</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+<div style="display: flex; align-items: center; justify-content: center;">
+
+    <div class="container5">
+      <div class="box">
+          <div class="heading">
+              <i class="fa-solid fa-cart-shopping"></i>
+             <h1> Your Cart</h1>
+          </div>
+             <div class="icon">
+              <i class="fa-regular fa-circle-xmark  " onclick="removeContainer()"></i>
+            
+          </div>
+      </div>
+      <!-- <div class="box1">
+          <div class="content1">
+            <img src="pepperoni-pizza.webp" alt="">
+             <div class="info">
+              <h4>Pepperoni Feast</h4>
+              <p>Price: $12.9 | Size: Large</p>
+              <div class="quan">
+                  <p class="quan1 minus1">-</p>
+                  <p class="quan2">Qty:<span class="span1">0</span></p>
+                  <p class="quan3 cart1">+</p>
+              </div>
+             </div>
+      </div>
+      <div class="content2">
+       <div class="deletion">
+         <div class="dust">
+          <i class="fa-solid fa-trash "></i>
+         </div>
+          <p>Total: $ <span class="cart">12.9</span> </p>
+       </div>
+      </div>
+  </div>  -->
+  <!-- <hr> -->
+  
+    </div>
+  
+
+  </div>
+    <!-- ------------------------------------Copyright------------------------------------   -->
+    <footer>
+      <p>© 2023 Pizza Palette. All rights reserved. Created with ♥ by Sandhali Gupta</p>
+    </footer>
+  </div>
+
+
+  
+
+
+  <!-- ------------------------------------Javascript------------------------------------   -->
+  <script src="menu.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
